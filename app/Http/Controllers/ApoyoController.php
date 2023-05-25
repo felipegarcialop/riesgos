@@ -47,7 +47,7 @@ class ApoyoController extends Controller
 
         $apoyo = Apoyo::create($request->all());
 
-        return redirect()->route('apoyos.index')
+        return redirect()->route('pinstituciones')
             ->with('success', 'Apoyo created successfully.');
     }
 

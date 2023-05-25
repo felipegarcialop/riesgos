@@ -66,6 +66,12 @@
                                 <ul class="nav-item">
                                     <a class="nav-link" href="{{ route('recursos.index') }}">{{ __('Recursos') }}</a>
                                 </ul>
+                                <ul class="nav-item">
+                                    <a class="nav-link" href="{{ route('principal') }}">{{ __('Principal') }}</a>
+                                </ul>
+                                <ul class="nav-item">
+                                    <a class="nav-link" href="{{ route('pinstituciones') }}">{{ __('Pinstituciones') }}</a>
+                                </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
