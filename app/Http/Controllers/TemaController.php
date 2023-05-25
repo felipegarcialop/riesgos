@@ -47,7 +47,7 @@ class TemaController extends Controller
 
         $tema = Tema::create($request->all());
 
-        return redirect()->route('temas.index')
+        return redirect()->route('principal')
             ->with('success', 'Tema created successfully.');
     }
 

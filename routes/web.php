@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\InformaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,5 +26,8 @@ Route::resource('temas', App\Http\Controllers\temaController::class);
 Route::resource('instituciones', App\Http\Controllers\InstitucioneController::class);
 Route::resource('apoyos', App\Http\Controllers\ApoyoController::class);
 Route::resource('recursos', App\Http\Controllers\RecursoController::class);
+
+Route::get('/principal', [App\Http\Controllers\PrincipalController::class, 'index'])->name('principal');
+Route::get('/informacion/{id}', [InformaController::class, 'show'])->name('informacion');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
