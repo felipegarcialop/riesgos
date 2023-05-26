@@ -18,7 +18,7 @@ class Temas extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->string('descripcion');
-            $table->string('fecha');
+            $table->Date('fecha');
            
             $table->timestamps();
         });

@@ -24,6 +24,7 @@
             min-height: 100%;
             position: relative;
         }
+        
         footer {
             background-color: #e7f0ed;
             position: absolute;
@@ -64,28 +65,28 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('grupos.index') }}">{{ __('grupos') }}</a>
+                                    <a class="nav-link" href="{{ route('grupos.index') }}" style="color: white">{{ __('grupos') }}</a>
                                 </ul> 
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('grados.index') }}">{{ __('grados') }}</a>
+                                    <a class="nav-link" href="{{ route('grados.index') }}" style="color: white">{{ __('grados') }}</a>
                                 </ul> 
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('temas.index') }}">{{ __('temas') }}</a>
+                                    <a class="nav-link" href="{{ route('temas.index') }}" style="color: white">{{ __('temas') }}</a>
                                 </ul> 
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('instituciones.index') }}">{{ __('Instituciones') }}</a>
+                                    <a class="nav-link" href="{{ route('instituciones.index') }}" style="color: white">{{ __('Instituciones') }}</a>
                                 </ul>
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('apoyos.index') }}">{{ __('Apoyos') }}</a>
+                                    <a class="nav-link" href="{{ route('apoyos.index') }}" style="color: white">{{ __('Apoyos') }}</a>
                                 </ul>
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('recursos.index') }}">{{ __('Recursos') }}</a>
+                                    <a class="nav-link" href="{{ route('recursos.index') }}" style="color: white">{{ __('Recursos') }}</a>
                                 </ul>
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('principal') }}">{{ __('Principal') }}</a>
+                                    <a class="nav-link" href="{{ route('principal') }}" style="color: white">{{ __('Principal') }}</a>
                                 </ul>
                                 <ul class="nav-item">
-                                    <a class="nav-link" href="{{ route('pinstituciones') }}">{{ __('Pinstituciones') }}</a>
+                                    <a class="nav-link" href="{{ route('pinstituciones') }}" style="color: white">{{ __('Pinstituciones') }}</a>
                                 </ul>
                     </ul>
 
@@ -95,13 +96,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}" style="color: white">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}" style="color: white">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -130,23 +131,23 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-1 sidebar" style="background-color: #7f9bc0">
+                <div class="col-md-2 sidebar" style="background-color: #7f9bc0">
                     <!-- Contenido del sidebar -->
                     <ul class="nav flex-column">
                     <li class="nav-item">
-                         <a class="nav-link" href="#">Temas</a>
+                         <a class="nav-link" href="{{ route('principal') }}" style="color: white">Temas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Instituciones apoyo</a>
+                            <a class="nav-link" href="{{ route('pinstituciones') }}" style="color: white">Instituciones apoyo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Material de apoyo</a>
+                            <a class="nav-link" href="{{ route('recursos.index') }}" style="color: white">Material de apoyo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Enciuestas</a>
+                            <a class="nav-link" href="#" style="color: white">Enciuestas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resultados</a>
+                            <a class="nav-link" href="#" style="color: white">Resultados</a>
                         </li>
                         <!-- Agrega más elementos del sidebar si es necesario -->
                     </ul>

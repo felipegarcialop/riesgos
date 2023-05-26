@@ -5,7 +5,7 @@
  
 @foreach ($datos as $dato)
 <button>
-    <a href="{{ route('informacion', $dato->id) }}" >{{ $dato->Nombre }}</a>
+    <a href="{{ route('informacion', $dato->id) }}" style="color: black">{{ $dato->Nombre }}</a>
 </button>    
 @endforeach
 <button class="btn">

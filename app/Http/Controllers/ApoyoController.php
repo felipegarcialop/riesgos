@@ -33,6 +33,7 @@ class ApoyoController extends Controller
     {
         $apoyo = new Apoyo();
         return view('apoyo.create', compact('apoyo'));
+        
     }
 
     /**
@@ -49,6 +50,7 @@ class ApoyoController extends Controller
 
         return redirect()->route('pinstituciones')
             ->with('success', 'Apoyo created successfully.');
+            
     }
 
     /**

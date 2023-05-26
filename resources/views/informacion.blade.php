@@ -10,7 +10,8 @@
     <h1>Descripción</h1>
 
     <h2>{{ $dato->Nombre }}</h2>
-    <p>{{ $dato->Descripcion }}</p>
+    <p>{{ $dato->descripcion }}</p>
+    <p>{{ $dato->fecha }}</p>
 </body>
 </html>
 @endsection

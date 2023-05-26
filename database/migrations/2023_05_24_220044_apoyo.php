@@ -19,7 +19,7 @@ class Apoyo extends Migration
             $table->string('Nombre');
             $table->string('Descripcion');
             $table->string('Direccion');
-            $table->string('Telefono');
+            $table->integer('Telefono');
             $table->string('Correo');
             $table->timestamps();
         });

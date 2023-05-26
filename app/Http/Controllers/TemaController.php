@@ -31,8 +31,10 @@ class TemaController extends Controller
      */
     public function create()
     {
+       
         $tema = new Tema();
         return view('tema.create', compact('tema'));
+        
     }
 
     /**

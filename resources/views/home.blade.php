@@ -25,7 +25,9 @@
                                 </font>
                             </p>
                         </div>
-                        <img src="/imagen/internet.png" class="card-img-bottom" style="wheight: 450px; height: 350px">
+                        
+                            <img src="/imagen/internet.png"class="card-img-bottom" style="wheight: 400px; height: 300px">
+                    
                     </div> 
                 </div>         
             </div>
