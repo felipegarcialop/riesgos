@@ -47,7 +47,7 @@ class RecursoController extends Controller
 
         $recurso = Recurso::create($request->all());
 
-        return redirect()->route('recursos.index')
+        return redirect()->route('precursos')
             ->with('success', 'Recurso created successfully.');
     }
 

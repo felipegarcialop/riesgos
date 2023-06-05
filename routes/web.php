@@ -35,4 +35,7 @@ Route::get('/informacion/{id}', [InformaController::class, 'show'])->name('infor
 Route::get('/pinstituciones', [App\Http\Controllers\AyudaController::class, 'index'])->name('pinstituciones');
 Route::get('/iayuda/{id}', [IayudaController::class, 'show'])->name('iayuda');
 
+Route::get('/precursos', [App\Http\Controllers\IrecursosController::class, 'index'])->name('precursos');
+Route::get('/irecursos/{id}', [InforecursosController::class, 'show'])->name('irecursos');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

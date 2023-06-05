@@ -34,15 +34,15 @@
                             <div class="card-body">
                                 @foreach ($datos as $dato)
                                     <button style="margin:10px">
-                                    <a href="{{ route('iayuda', $dato->id) }}" style="color: black; text-decoration:none;">{{ $dato->Nombre }}</a>
+                                        <a href="{{ route('irecursos', $dato->id) }}"style="color: black;  text-decoration:none;">{{ $dato->Nombre }}</a>
                                     </button>
                                 @endforeach
                                 <button class="btn">
-                                    <a href="{{ route('apoyos.create') }}">
+                                    <a href="{{ route('recursos.create') }}">
                                     <img src="/imagen/agregar.png" style="widht: 40px; height: 40px">
                                     </a>
                                 </button>
-                            </div> 
+                            </div>    
                         </div> 
                     </div>         
                 </div>

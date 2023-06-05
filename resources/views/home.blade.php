@@ -2,15 +2,7 @@
 
 @section('content')
 
-<style>
-    div1{
-        height: 200px;
-        background-color: #EEE;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style> 
+
 
     <div class="container">
         <div class="row justify-content-center">
@@ -27,8 +19,9 @@
                         </div>
                         
                             <img src="/imagen/internet.png"class="card-img-bottom" style="wheight: 400px; height: 300px">
-                    
-                    </div> 
+                            
+                    </div>
+                     
                 </div>         
             </div>
         </div>  

@@ -30,7 +30,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 50px;
+            height: 55px;
             color: white;
             z-index: 1; /* Establecer el valor del z-index */
             display: flex; /* Utilizar flexbox */
@@ -39,7 +39,7 @@
         .sidebar {
             background-color: #f8f9fa;
             border-right: 1px solid #dee2e6;
-            min-height: 100vh;
+            min-height: 81vh;
             z-index: 2; /* Establecer el valor del z-index */
         }
         .content {
@@ -47,6 +47,7 @@
             position: relative; /* Establecer la posición relativa */
             z-index: 0; /* Establecer el valor del z-index */
         }
+        
         
     </style> 
 </head>
@@ -141,10 +142,10 @@
                             <a class="nav-link" href="{{ route('pinstituciones') }}" style="color: white">Instituciones apoyo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('recursos.index') }}" style="color: white">Material de apoyo</a>
+                            <a class="nav-link" href="{{ route('precursos') }}" style="color: white">Material de apoyo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white">Enciuestas</a>
+                            <a class="nav-link" href="#" style="color: white">Encuestas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" style="color: white">Resultados</a>
